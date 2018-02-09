@@ -3,11 +3,14 @@
 
 p {
   color: #666666;
-  font-family: "Century Gothic", Arial, sans-serif;
+  font-family: 'Quattrocento', Georgia, "Times New Roman", serif;
 }
 
+  .bold { font-weight: 700; }
+  .italic { font-style: italic; }
+
 h1 {
-  font-family: "Century Gothic", Arial, sans-serif;
+  font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
   padding-left: 1.25em;
 }
 
@@ -43,7 +46,7 @@ h1 {
 
  .caption {
    color: black;
-   font-family: "Lucida Bright", "Times New Roman", serif;
+   font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
    font-style: italic;
    font-size: 0.8em;
    margin-top: 0;
@@ -52,11 +55,14 @@ h1 {
 
 #footer {
   color: black;
-  font-family: "Lucida Bright", "Times New Roman", serif;
+  font-family: 'Quattrocento', Georgia, "Times New Roman", serif;
   font-size: 0.8em;
   border-top: 1px solid black;
 }
 
 img {
-  border: none;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
