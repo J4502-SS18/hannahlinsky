@@ -24,6 +24,11 @@ h1 {
   margin: 0 auto;
 }
 
+#container2 {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #26496c;
+}
 .navigation {
   list-style: none;
   margin: 0;
