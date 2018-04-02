@@ -48,7 +48,7 @@ h1 {
   padding: 0;
 }
 
-.navigation a:link, #nav a:visited {
+.navigation a:link, .navigation a:visited {
   color: #ffffff;
   background-color: #26496c;
   display: block;
