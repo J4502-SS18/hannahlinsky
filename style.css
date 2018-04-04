@@ -89,8 +89,7 @@ img {
   display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-}
+    width: 100%;}
 
 .wrapper {
 	display: flex;
@@ -100,11 +99,56 @@ img {
         flex: 1 100%;
         padding: 10px; }
 
+@media (min-width:500px) {
 
-@media (min-width:800px) {
+      .navigation {
+        flex-flow: row wrap;
+                justify-content: space-around;}
+
+      .navigation a {
+        border: none;}
+
+      .navigation {
+        width: 95%;}
+
+      article {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas:
+          "a c c"
+          "b c c";}
+
+      footer {
+          order: 4;}
+
+
+      .image {
+          width: 100%;
+          margin-right: 10px;
+          grid-area: a;}
+
+      .image2 {
+          width: 100%;
+          margin-right: 10px;
+          grid-area: b;}
+
+                /* .image3 {
+                      width: 60%;
+                      margin-right: 10px;
+                      grid-area: b;} */
+
+      .story {
+          width: 90%;
+          grid-area: c;}
+
+      .first {
+          margin-top: 0;}
+    }
+
+@media (min-width:1000px) {
 
   .navigation {
-
         flex-flow: row wrap;
         justify-content: space-around;}
 
@@ -115,34 +159,37 @@ img {
   width: 95%;}
 
   article {
-      	flex: 3 0px;}
-
-  article {
-        order: 2;}
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "a c c"
+      "a b b";}
 
   footer {
         order: 4;}
 
-            /*These styles apply to the Flexbox image technique */
-
-  article {
-          display: flex;
-          flex-flow: row;
-          flex-wrap: wrap;}
-
-            /*This code is for the first image attempt -- the object-fit property*/
-            /*img {
-                width: 45%;
-                object-fit: contain;
-            }*/
 
   .image {
-        width: 45%;
-        margin-right: 10px;}
+        width: 100%;
+        margin-right: 10px;
+        grid-area: a;}
+
+  .image2 {
+
+        width: 70%;
+        margin-right: 10px;
+        grid-area: b;}
+
+  /* .image3 {
+        width: 60%;
+        margin-right: 10px;
+        grid-area: b;} */
 
   .story {
-        width: 45%;}
+        width: 70%;
+        grid-area: c;}
 
   .first {
         margin-top: 0;}
-        }
+      }
