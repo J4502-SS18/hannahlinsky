@@ -56,7 +56,7 @@ h1 {
   font-family: "Century Gothic", Arial, sans-serif;
   padding: 4px;}
 
- .navigation a:hover, #nav a:active {
+ .navigation a:hover, .navigation a:active {
    background-color: #4b749f;}
 
 .navigation {
@@ -98,6 +98,14 @@ img {
         flex: 1 100%;
         padding: 10px; }
 
+  .menu-trigger {
+        order: 1;
+        font-size: 1.75em;
+        width: 2em;}
+
+  .navigation {
+            display: none;}
+
 @media (min-width:500px) {
 
       .navigation {
@@ -129,18 +137,24 @@ img {
           margin-right: 10px;
           grid-area: b;}
 
-                /* .image3 {
-                      width: 60%;
-                      margin-right: 10px;
-                      grid-area: b;} */
-
       .story {
           width: 90%;
           grid-area: c;}
 
       .first {
           margin-top: 0;}
-    }
+
+    .navigation {
+        display: flex;  }
+
+    .menu-trigger {
+        display: none;  }
+
+    header h1 {
+        order: 1;}
+
+    .navigation {
+        order: 2;} }
 
 @media (min-width:1000px) {
 
