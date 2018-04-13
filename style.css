@@ -100,8 +100,10 @@ img {
 
   .menu-trigger {
         font-size: 1.75em;
+        color: white;
         width: 2em;
-        text-align: right;}
+        text-align: right;
+        border-bottom: none;}
 
   .navigation {
             display: none;}
@@ -110,7 +112,7 @@ img {
 
       .navigation {
         flex-flow: row wrap;
-                justify-content: space-around;}
+        justify-content: space-around;}
 
       .navigation a {
         border: none;}
@@ -187,11 +189,6 @@ img {
         width: 70%;
         margin-right: 10px;
         grid-area: b;}
-
-  /* .image3 {
-        width: 60%;
-        margin-right: 10px;
-        grid-area: b;} */
 
   .story {
         width: 70%;
