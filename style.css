@@ -105,6 +105,22 @@ img {
         text-align: right;
         border-bottom: none;}
 
+  .map-wrapper {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+
+    .map-wrapper iframe{
+        left:20px;
+        right: 20px;
+        top:20px;
+        height:100%;
+        width:100%;
+        position: absolute;
+    }
+
   .navigation {
             display: none;}
 
@@ -142,6 +158,12 @@ img {
       .story {
           width: 90%;
           grid-area: c;}
+          .map-wrapper {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
 
       .first {
           margin-top: 0;}
@@ -173,7 +195,7 @@ img {
     grid-gap: 20px;
     grid-template-areas:
       "a c c"
-      "a b b";}
+      "d b b";}
 
   footer {
         order: 4;}
